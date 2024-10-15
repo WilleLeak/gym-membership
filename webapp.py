@@ -3,6 +3,14 @@ import pandas as pd
 
 
 # misc stuff
+st.set_page_config(
+    page_title="Calorie Predictions",
+    page_icon="️‍🔥",
+    layout='centered',
+    initial_sidebar_state='auto'
+)
+
+
 data_csv = 'gym_members_exercise_tracking.csv'
 example_data = pd.read_csv(data_csv).head(10)
 
